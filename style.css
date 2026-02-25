@@ -35,6 +35,7 @@
 img {
     max-width: 600px;
     height: auto;
+    
 }
 
 @media (max-width: 1200px){
@@ -46,28 +47,47 @@ img {
 
 
 .container div.header {
+    overflow: visible;
+    z-index: 3;
     grid-area: header;
     background-color: burlywood;
     text-align: center;
+    
+    border-bottom: 5px solid rgb(131, 95, 49);
+    box-shadow: 0 40px 80px 0 rgba(131, 95, 49, 0.4);
 }
 
 .container div.left {
+    z-index: 2;
     grid-area: left;
     background-color: black;
+    border-bottom: 5px solid burlywood;
 }
+
+
 .container div.right {
+    z-index: 2;
     grid-area: right;
     background-color: black;
+    border-bottom: 5px solid burlywood;
 }
 
 .container div.main {
+    padding-top: 30px;
+
+    overflow: visible;
+    z-index: 1;
     grid-area: main;
-    background-color: green;
+    background-color: whitesmoke;
+    border-bottom: 5px solid burlywood;
     text-align: center;
 }
 
 .container div.footer {
+    z-index: 2;
     grid-area: footer;
-    background-color: blue;
+    background-color: rgb(131, 95, 49);
     text-align: center;
+    
+    box-shadow: 0 -40px 80px 0 rgba(131, 95, 49, 0.4);
 }
