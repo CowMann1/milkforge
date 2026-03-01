@@ -33,7 +33,7 @@
 }
 
 img {
-    max-width: 600px;
+    max-width: 400px;
     height: auto;
     
 }
@@ -54,33 +54,35 @@ img {
     text-align: center;
     
     border-bottom: 5px solid rgb(131, 95, 49);
-    box-shadow: 0 40px 80px 0 rgba(131, 95, 49, 0.4);
+    box-shadow: 0 40px 80px 0  rgba(0, 0, 0, 0.4);
 }
 
 .container div.left {
     z-index: 2;
     grid-area: left;
-    background-color: black;
-    border-bottom: 5px solid burlywood;
+    background-color: rgb(66, 66, 66);
+    
 }
 
 
 .container div.right {
     z-index: 2;
     grid-area: right;
-    background-color: black;
-    border-bottom: 5px solid burlywood;
+    background-color: rgb(66, 66, 66);
+    
 }
 
 .container div.main {
     padding-top: 30px;
 
     overflow: visible;
-    z-index: 1;
+    z-index: 3;
     grid-area: main;
     background-color: whitesmoke;
-    border-bottom: 5px solid burlywood;
+    
     text-align: center;
+
+    box-shadow: -40px 0 80px 0 rgba(0, 0, 0, 0.4);
 }
 
 .container div.footer {
@@ -89,5 +91,7 @@ img {
     background-color: rgb(131, 95, 49);
     text-align: center;
     
-    box-shadow: 0 -40px 80px 0 rgba(131, 95, 49, 0.4);
+    box-shadow: 0 -40px 80px 0  rgba(0, 0, 0, 0.4);
+
+    border-top: 5px solid burlywood;
 }
